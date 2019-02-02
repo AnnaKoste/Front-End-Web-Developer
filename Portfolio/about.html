@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <title>About Me</title>
+    </head>
+
+    <body class="bodySm">
+      <div class="left">
+        <div class="colsq">
+          <div id="square1"></div>
+          <p>#02b3e4</p>
+        </div>
+        <div class="colsq">
+          <div id="square2"></div>
+          <p>#2d3c49</p>
+        </div>
+        <div class="colsq1">
+          <div id="square3"></div>
+          <p>#7d97ad</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <header>
+          <img class="header__logo" src="images/logo.svg" alt="logo">
+          <a id="menu" class="header_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </a>
+          <h1>
+            Anna Kostechuk
+          </h1>
+          <h3>
+            Front-End Developer
+          </h3>
+          <hr>
+        </header>
+
+        <nav id="drawer" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html">Main</a></li>
+            <li class="nav__item"><b>About Me</b></li>
+            <li class="nav__item"><a href="contact.html">Contact details</a></li>
+            <li class="nav__item"><a href="index.html#Projects">Projects</a></li>
+          </ul>
+          <hr id="line">
+        </nav>
+
+        <main>
+          <img class="myfoto" src="images/myfoto.jpeg" alt="My foto">
+          <h2>About Me</h2>
+          <p>My name is Anna. I am a novice Font-End developer.</p>
+          <p>Currently I am live in Singapore but I am from Russia.</p>
+          <hr id="line2">
+        </main>
+      </div>
+
+      <script>
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+
+        menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+          drawer.classList.remove('open');
+        });
+      </script>
+    </body>
+</html>

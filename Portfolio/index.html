@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <title>My portfolio site</title>
+    </head>
+
+    <body id="body">
+      <div class="left">
+        <div class="colsq">
+          <div id="square1"></div>
+          <p>#02b3e4</p>
+        </div>
+        <div class="colsq">
+          <div id="square2"></div>
+          <p>#2d3c49</p>
+        </div>
+        <div class="colsq1">
+          <div id="square3"></div>
+          <p>#7d97ad</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <header>
+          <img class="header__logo" src="images/logo.svg" alt="logo">
+          <a id="menu" class="header_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </a>
+          <h1>
+            Anna Kostechuk
+          </h1>
+          <h3>
+            Front-End Developer
+          </h3>
+          <hr>
+        </header>
+
+        <nav id="drawer" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><b>Main</b></li>
+            <li class="nav__item"><a href="about.html">About Me</a></li>
+            <li class="nav__item"><a href="contact.html">Contact details</a></li>
+            <li class="nav__item"><a href="#Projects">Projects</a></li>
+          </ul>
+        </nav>
+
+        <main>
+          <div id="main">
+            <picture class="img5">
+              <source class="img5" media="(min-width: 750px)" srcset="images/img5_large.jpg">
+              <img class="img5" src="images/img5_small.jpg" alt="html">
+            </picture>
+            <h2>Projects</h2>
+
+            <div id="Projects">
+              <div class="projects1">
+                <a href="https://github.com/udacity/Appify/" target="_blank">
+                  <img class="pic" src="images/MatGame.png" alt="A man work at the computer">Matching Game
+                </a>
+              </div>
+              <div class="projects1">
+                <a href="" target="_blank">
+                  <img class="pic" src="images/img2.jpg" alt="A man work at the computer">(In progress)
+                </a>
+              </div>
+              <div class="projects2">
+                <a href="" target="_blank">
+                  <img class="pic" src="images/img1.jpg" alt="A man work at the computer">(In progress)
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr id="line2">
+        </main>
+      </div>
+
+      <footer>
+        <p>All images © 2018 <a href="https://pixabay.com/" target="_blank">Pixabay</a> and <a href="https://www.freestockimages.ru/" target="_blank">freestockimages.ru</a></p>
+      </footer>
+
+      <script>
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+
+        menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+          drawer.classList.remove('open');
+        });
+      </script>
+    </body>
+</html>
