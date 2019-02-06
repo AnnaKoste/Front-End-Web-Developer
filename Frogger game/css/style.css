@@ -1,0 +1,22 @@
+body {
+    height: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3 {
+    margin: 1em 3em 0 3em;
+}
+
+canvas {
+    display: none;
+}
+
+#gameWin {
+    display: none;
+    justify-content: center;
+}
+
+#welcome {
+    display: block;
+}
