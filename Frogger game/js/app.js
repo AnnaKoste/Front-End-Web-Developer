@@ -7,7 +7,6 @@ const imgs = document.querySelectorAll('img');
 const leveltxt = document.getElementById('leveltxt');
 const gemstxt = document.getElementById('gemstxt');
 const restart = document.getElementById('restart');
-let urlImg;
 let level = 0;
 let gems = 0;
 
@@ -37,11 +36,10 @@ function reset() {
 
 imgs.forEach(function(img) {
   img.addEventListener('click', function() {
-    urlImg = img.getAttribute('src');
+    player.sprite = img.getAttribute('src');
     document.getElementById('welcome').style.display = 'none';
     document.querySelector('canvas').style.display = 'inline';
     document.getElementById('gameWin').style.display = 'flex';
-    // player.sprite = urlImg;
   });
 });
 
@@ -70,7 +68,8 @@ Enemy.prototype.render = function() {
 };
 
 var Player = function(x, y) {
-    this.sprite = 'images/char-boy.png';
+    // this.sprite = 'images/char-boy.png';
+    this.sprite = '';
     this.x = x;
     this.y = y;
 };
