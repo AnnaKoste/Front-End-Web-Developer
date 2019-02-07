@@ -68,8 +68,7 @@ Enemy.prototype.render = function() {
 };
 
 var Player = function(x, y) {
-    // this.sprite = 'images/char-boy.png';
-    this.sprite = '';
+    this.sprite = 'images/char-boy.png';
     this.x = x;
     this.y = y;
 };
