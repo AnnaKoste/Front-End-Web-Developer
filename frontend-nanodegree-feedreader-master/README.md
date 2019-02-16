@@ -3,6 +3,10 @@
 This is our RSS feed reader application. It uses the Google Feed Reader API to grab RSS feeds as JSON object.
 
 
+# Installing
+To run this project need to download the project from GitHub (https://github.com/AnnaKoste/Front-End-Web-Developer/tree/master/frontend-nanodegree-feedreader-master) and to run index.html.
+
+
 # Unit tests
 
 `feedreader.js` contains tests:
