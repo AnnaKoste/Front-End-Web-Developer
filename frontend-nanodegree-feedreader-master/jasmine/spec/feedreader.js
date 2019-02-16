@@ -54,7 +54,7 @@ $(function() {
          });
 
          it('loadFeed function', function() {
-           var entry = document.querySelectorAll('.entry');
+           var entry = document.querySelectorAll('.feed .entry');
            expect(entry.length).not.toBe(0);
          });
     });
